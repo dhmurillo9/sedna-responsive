@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.encabezado{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+a{
+    position: relative;
+}
+nav{
+    padding: 10px;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: auto;
+    background-color: rgb(128, 128,128,1);
+    
+}
+.imgFondo{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    margin-top: 0;
+}
+nav ul{
+    position: relative;
+    float: left;
+    left: 0;
+    margin: auto;
+    z-index: 1
+}
+.logo{
+    float: left;
+    position: relative;
+    margin: auto;
+    left: 0;
+    width: 10%;
+    height: auto;
+    
+}
