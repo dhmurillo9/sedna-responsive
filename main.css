@@ -4,43 +4,130 @@
     margin: 0;
     font-family: 'Open Sans', sans-serif;
 }
-
 .encabezado{
     width: 100%;
     height: auto;
-    overflow: hidden;
-}
-a{
-    position: relative;
-}
-nav{
-    padding: 10px;
-    position: relative;
-    z-index: 2;
-    width: 100%;
-    height: auto;
-    background-color: rgb(128, 128,128,1);
+    overflow: hidden;  
     
 }
-.imgFondo{
+.barra{
     width: 100%;
-    position: relative;
+    height: auto;
     overflow: hidden;
-    margin-top: 0;
-}
-nav ul{
-    position: relative;
-    float: left;
-    left: 0;
-    margin: auto;
-    z-index: 1
+    background-color: #232731;
+    position: fixed;
+    z-index: 2;
 }
 .logo{
     float: left;
-    position: relative;
     margin: auto;
     left: 0;
-    width: 10%;
+    top: 0;
+    bottom: 0;
+    width: 12%;
     height: auto;
+    padding: 15px 0;
     
 }
+nav{
+    height: auto;
+    width: 1170px;
+    overflow: hidden;
+    background-color: #232731;
+    box-shadow: 0 0 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.imgFondo{
+    position: absolute;
+    z-index: -1;
+    overflow: hidden;
+    margin-top:0 ;
+}
+nav ul{
+    top: 0;
+    bottom: 0;
+    position: relative;
+    float: left;
+    left: 0;
+    margin: auto;
+    height: auto;
+}
+nav ul li {
+    display: inline;
+    height: auto;
+    overflow: hidden;
+    padding: 15px 0;
+
+   }
+nav ul li a{
+    height: 0;
+    display: inline;
+    padding: 0;
+    padding-right: 30px;
+    font-size: 13px;
+    font-style: normal;
+}
+.ul2{
+    top: 0;
+    bottom: 0;
+    position: relative;
+    float: right;
+    margin: auto;
+    height: auto;
+}
+.ul2 li:nth-child(2) a{
+   padding: 10px 20px;
+    border: white solid 2px;
+    border-radius: 100px; 
+}
+nav ul li a,.ul2 li:nth-child(2) a{
+    transition-delay: 0;
+    transition-duration: 1s;
+    transition-property: all;
+}
+nav ul li a:hover,.ul2 li:nth-child(2) a:hover{
+    color: #FF5274;
+    border-color: #FF5274;
+}
+.encabezado div{
+    position: relative;
+    margin-top: 20%;
+    width: 100%;
+    align-content: center;
+    z-index: 1;
+    box-sizing: border-box;
+}
+.encabezado div h1{
+    text-align: center;
+    font-size: 60px;
+    color: white;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+.encabezado div p {
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    font-weight: 300;
+    margin-bottom: 80px;
+}
+.encabezado div a:nth-child(3){
+    padding: 15px 40px;
+    border: #FF5274 solid 2px;
+    background-color: #FF5274;
+    border-radius: 100px; 
+    font-size: 13px;
+    color: white;
+}
+.encabezado div a:nth-child(4){
+    padding: 15px 40px;
+    border: #FF5274 solid 2px;
+    border-radius: 100px; 
+    font-size: 13px;
+    color:#FF5274;
+}
+
